@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import '../stylesheets/filter-component.css';
 import Button from 'react-bootstrap/Button';
 
-function Filter(){
-  const [query, setQuery] = useState('');
+function Filter({query, setQuery}){
+  
   const onChange = e => {
     e.preventDefault();
     setQuery(e.target.value);

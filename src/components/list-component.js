@@ -1,28 +1,52 @@
 import React, {useEffect, useState} from 'react';
 import '../stylesheets/list-component.css';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
+function clickMe() {
+  console.log('Licked');
+  // return (
+    // <Modal
+      // {...props}
+      // size="lg"
+      // aria-labelledby="contained-modal-title-vcenter"
+      // centered
+    // >
+      // <Modal.Header closeButton>
+        // <Modal.Title id="contained-modal-title-vcenter">
+          // Modal heading
+        // </Modal.Title>
+      // </Modal.Header>
+      // <Modal.Body>
+        // <h4>Centered Modal</h4>
+        // <p>
+          // Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          // dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          // consectetur ac, vestibulum at eros.
+        // </p>
+      // </Modal.Body>
+      // <Modal.Footer>
+        // <Button onClick={props.onHide}>Close</Button>
+      // </Modal.Footer>
+    // </Modal>
+  // );
+}
 
-function List(){
-  const url = 'http://api.tvmaze.com/shows';
-  const [shows, setShows] = useState();
-  const fetchApi = async () => {
-    const response = await fetch(url);
-    const responseJson = await response.json();
-    setShows(responseJson)
-  }
-  const [adder, setAdder] = useState(false);
-  useEffect(() => {
-    fetchApi()
-  }, [])
+function List({addFavourites, removeFavourites, shows}){
+  const [modalShow, setModalShow] = useState(false);
   return(
-    <div className='list-container'>
+    <div className='list-container' >
       { !shows ? 'Cargando...' : shows.map(( show, index) => {
           return(
-            <div key={index} className='show-container'>
+            <div key={index} className='show-container' >
               <img src={show.image.medium} />
-              <h3>{show.name}</h3>
-              <Button variant="primary" className='add' onClick={() => setAdder(true)}>Add</Button>
+              <Button variant="danger" onClick={clickMe}>{show.name}</Button>
+              // <MyVerticallyCenteredModal
+              // show={modalShow}
+              // onHide={() => setModalShow(false)}
+              // />
+                {addFavourites ? <Button variant="primary" className='add' disabled={!addFavourites} onClick={() => addFavourites(show)}>Add</Button> :'' }
+                {removeFavourites ? <Button variant="primary" className='add' onClick={() => removeFavourites(show)}>Remove</Button> :'' }
             </div>
           );
         })
