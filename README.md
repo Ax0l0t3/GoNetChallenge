@@ -24,6 +24,7 @@ Incomplete Assesments
   -Mostly I would say the reason not delivering the entire application, missing time. That and a lack of background knowledge. Won't be the most outstanding reason,  but it is as it is.
   
 Final Thoughts
+
   I would like to end just by saying, you won't regret having me on your team. Sounds a little to presumptuous. And specially when i couldn't deliver the full application.
   But, the heart of the matter here is, I have another job. Whilst, be it an example of what I can do if my compromise would be with you.
   I highly value the given opportunities. So, you won't regret it.
