@@ -17,12 +17,11 @@ Improvement
   -Add a little bit of security: Confidentiality (Prevent disclosure of data to thirds); Integrity (Ensure we're getting trustworth data); Availability (Ensure data being accesible to end users despite any server errors)
   
 Incomplete Assesments
-  -Missing the favourites part from the Part-1. I could demonstrate it with a function and an alert --> onClick={()=> alert('Added to favourite')}, though, that ain't really implementing the service.
   -Part-2 challenge. For it i was thinking to add a routes module so i can navigate through it. Or instead, bootstrap has some sort of "Pop-up Cards". Maybe those ones.
   -Mostly i would say the reason not delivering the entire application, missing time. And honestly, a lack of background knowledge. Won't be the most outstanding reason,  but it is as it is.
   
 Final Thoughts
   I would like to end just by saying, you won't regret having me on your team. Sounds a little to presumptuous. And specially when i couldn't deliver the full application.
-  But, the heart of the matter here is, i'm compromised with my actual job. Really i had only like 6 hours dedicated to the challenge. Whilst, be it an example of what I can do if my compromise would be with you.
+  But, the heart of the matter here is, i'have another job. Whilst, be it an example of what I can do if my compromise would be with you.
   I highly value the given opportunities. So, you won't regret it.
   
